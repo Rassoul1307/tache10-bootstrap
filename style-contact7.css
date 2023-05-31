@@ -1,0 +1,268 @@
+
+.navbar-brand img{
+    width: 160px;
+}
+.top-logo img{
+    width: 150px;
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    background-color: #ff7c08;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 0.9rem;
+}
+
+.social-link:hover, .social-link:focus {
+    background: white;
+    text-decoration: none;
+    color: #ff7c08;
+}
+
+.parallelogram { 
+    height: 60px;
+    background-color: #ff7c08;
+    /* Skew */
+    transform: skew(-20deg);
+}
+.navbar .navbar-nav .nav-item .nav-link:focus{
+    color: #FF7C08;
+}
+.navbar .navbar-nav .nav-item:hover{
+    border-bottom: 1px solid #FF7C08;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    color: #000000;
+    transition: 0.2s linear;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    color: #FF7C08;
+}
+
+
+@media screen and (max-width:800px) {
+    .parallelogram{
+        background-color: transparent;
+        margin-right: 0;
+        
+    }
+}
+
+.top-2{
+    background-color: #231f40;
+}
+.texte1{
+    transform: skew(20deg);
+}
+.group-icon .rounded-circle{ 
+    background-color: rgb(255, 238, 223);
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.6s ease-in-out;
+}
+.group-icon-nav .rounded-circle{ 
+    background-color: #FF7C08;
+    width: 30px;
+    height: 30px;
+    transition: background-color 0.6s ease-in-out;
+}
+.group-icon .rounded-circle:hover{ 
+    background-color: #FF7C08;
+}
+.group-icon-nav .rounded-circle:hover{ 
+    background-color: #f9f7f5;
+}
+.group-icon .rounded-circle:hover a i{ 
+    color: #ffffff !important;
+}
+.group-icon-nav .rounded-circle:hover a i{ 
+    color: #FF7C08 !important;
+}
+.corps{
+    background-color: rgb(238, 246, 235);
+}
+.rounded-circle span{
+    bottom: 27px;
+    left: 27px;
+    border: 1px solid white;
+    padding-top: 2px;
+}
+.contact .accueil-contact {
+    background:   rgba(35, 31, 64, 0.6) url("contact-img/counter_bg.jpg") no-repeat
+        top/cover;
+    min-height: 300px;
+    background-blend-mode: darken;
+}
+.accueil-contact .nav {
+    --bs-nav-link-padding-x: 0.5rem;
+}
+.accueil-contact .nav .nav-link.active,
+.accueil-contact .nav .nav-link:hover {
+    color: #ff7c08 !important ;
+}
+
+/* section HOME BOOK A TABLE  */
+.reservation .bg-reservation {
+    background-image:  url("contact-img/reservation_bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+}
+.reservation .bg-hover { 
+    height: 100%;
+    position: absolute;
+    right: 0;
+    background-color:rgba(245 ,121,11,0.88);
+    border-top-right-radius: 0.5rem ;
+    border-bottom-right-radius: 0.5rem ;
+}
+@media (min-width:1200px) {
+    .reservation .bg-hover{ 
+        width:65%;
+        clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+.reservation .title-book::after{ 
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.reservation .btn-home-booking-confirm { 
+    background-color: #231F40;;
+    border-color:#231F40;
+    position: relative;
+}
+.reservation .btn-home-booking-confirm p{ 
+    position: relative; 
+    top:7px;
+    left: 2px;
+    transition: all 0.8s;
+}
+.reservation .btn-home-booking-confirm:hover p{ 
+    left: 20px;
+}
+.reservation .fa-circle-arrow-right{
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.reservation .btn-home-booking-confirm:hover .fa-circle-arrow-right{ 
+    opacity: 1;
+    left:25px;
+}
+/* section HOME BOOK A TABLE EXIT */
+
+.footer .footer-regfood {
+    background: url("contact-img/footer_bg.jpg") no-repeat top/cover
+        rgba(35, 31, 64, 0.88);
+    min-height: 400px;
+    background-blend-mode: darken;
+}
+.footer .footer-copyright {
+    background-color: #ff7c08;
+}
+.footer .footer-regfood .rounded-circle {
+    background-color: #ff7c08;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.6s ease-in-out;
+}
+.footer .footer-regfood .rounded-circle:hover {
+    background-color: white;
+}
+.footer .footer-regfood .rounded-circle:hover a i {
+    color: #ff7c08 !important;
+}
+.footer-regfood .flex-column .nav-link:hover {
+    color: #ff7c08 !important;
+}
+.footer-regfood .titre-descriptif::after,
+.footer-regfood .titre-descriptif3::after {
+    content: "";
+    width: 110px;
+    height: 1px;
+    background-color: #ff7c08;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin-left: 7px;
+}
+.footer-regfood .titre-descriptif3::after {
+    width: 120px;
+}
+.footer-regfood .last-column .hstack::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ff7c08;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.footer-regfood .hstack{ 
+    margin-left: 10px;
+}
+.contact-form .input-group-text{ 
+    background-color: #FFE7D2;
+}
+.contact-form .card{ 
+    background-color: #F3F7FB;
+}
+.contact-form .btn-contact-send-message{ 
+    background-color: #ff7c08;
+    border-color: #ff7c08;
+    transition: all 0.3s ;
+    position: relative;
+}
+.contact-form .btn-contact-send-message:hover{ 
+    border-color: #231F40;
+    background-color: #231F40;
+}
+.contact-form .btn-contact-send-message p{
+    position: relative; 
+    top:7px;
+    left: 2px;
+    transition: all 0.8s;
+}
+.contact-form .btn-contact-send-message:hover p{ 
+    left:20px;
+}
+.contact-form .fa-circle-arrow-right{
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.8s;
+}
+.contact-form .btn-contact-send-message:hover .fa-circle-arrow-right{ 
+    opacity: 1;
+    left:25px;
+}
+.contact-form .card .contact-title{ 
+    color: #ff7c08;
+}
+.contact-form .card .contact-title::after{ 
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ff7c08;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+
